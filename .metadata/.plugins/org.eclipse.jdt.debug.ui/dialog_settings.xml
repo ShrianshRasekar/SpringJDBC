@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=discovery-server/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{DiscoveryServerApplication.java[DiscoveryServerApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=movie-rating-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{MovieRatingServiceApplication.java[MovieRatingServiceApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=movie-information-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{MovieInformationServiceApplication.java[MovieInformationServiceApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=movie-catalogue-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{MovieCatalogueServiceApplication.java[MovieCatalogueServiceApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=user-information-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{UserInformationServiceApplication.java[UserInformationServiceApplication&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=discovery-server1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.eurekaserver{DiscoveryServer1Application.java[DiscoveryServer1Application&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=user-information-service1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.userinformationservice1{UserInformationService1Application.java[UserInformationService1Application&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="669"/>
+			<item key="DIALOG_Y_ORIGIN" value="191"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+</section>

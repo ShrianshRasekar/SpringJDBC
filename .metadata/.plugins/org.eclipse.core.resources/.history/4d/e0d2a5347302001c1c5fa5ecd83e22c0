@@ -1,0 +1,7 @@
+spring.application.name=user-info-service1
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=UserInformationService1
+spring.data.mongodb.repositories.type=auto
+server.port=0
+
