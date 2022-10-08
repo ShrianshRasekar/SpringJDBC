@@ -2,6 +2,8 @@ package com.springbootormrest.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,17 +41,17 @@ public class EmployeeController {
 	}
 	
 	@PostMapping("/addemp")
-	public Employee addemployee(@RequestBody Employee emp){
+	public Employee addemployee(@Valid @RequestBody Employee emp){
 		return employeetemplate.addEmployee(emp);
 	}
 		
 	@PostMapping("/addemps")
-	public List<Employee> addemployees(@RequestBody List<Employee> ls){
+	public List<Employee> addemployees(@Valid @RequestBody List<Employee> ls){
 		return employeetemplate.addEmployees(ls);
 	}
 	
 	@PutMapping("/updateemp")
-	public Employee updateemployee(@RequestBody Employee emp){
+	public Employee updateemployee(@Valid @RequestBody Employee emp){
 		return employeetemplate.updateEmployee(emp);
 	}
 	

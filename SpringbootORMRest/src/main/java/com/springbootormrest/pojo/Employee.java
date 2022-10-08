@@ -1,25 +1,56 @@
 package com.springbootormrest.pojo;
 
+import java.util.List;
+
+import javax.annotation.Generated;
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Email;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity(name="emp")
 public class Employee {
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private long eid;
+	@NotNull
 	private String ename;
+	
+	@NotNull
 	private String job;
+	
+	@NotNull
 	private long mgr;
+	
+	@NotNull
 	private double esal;
+	
+	@NotNull
 	private long deptno;
+	
+	@NotNull
 	private long mobileno;
+	
+	@Autowired
+	@Email(message = "Email is mandatory")
+	@NotNull
 	private String email;
 	
+	@OneToMany(mappedBy = "emp")
+	private List<Address> empAddress;
 	
 	
-	public Employee(long eid, String ename, String job, long mgr, double esal, long deptno, long mobileno,
-			String email) {
+	
+	public Employee(long eid, @NotNull String ename, @NotNull String job, @NotNull long mgr, @NotNull double esal,
+			@NotNull long deptno, @NotNull long mobileno, @Email(message = "Email is mandatory") @NotNull String email,
+			List<Address> empAddress) {
 		super();
 		this.eid = eid;
 		this.ename = ename;
@@ -29,9 +60,10 @@ public class Employee {
 		this.deptno = deptno;
 		this.mobileno = mobileno;
 		this.email = email;
+		this.empAddress = empAddress;
 	}
-	
-	
+
+
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -87,10 +119,21 @@ public class Employee {
 		this.email = email;
 	}
 	
+	public List<Address> getEmpAddress() {
+		return empAddress;
+	}
+
+
+	public void setEmpAddress(List<Address> empAddress) {
+		this.empAddress = empAddress;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Employee [eid=" + eid + ", ename=" + ename + ", job=" + job + ", mgr=" + mgr + ", esal=" + esal
-				+ ", deptno=" + deptno + ", mobileno=" + mobileno + ", email=" + email + "]";
+				+ ", deptno=" + deptno + ", mobileno=" + mobileno + ", empAddress=" + empAddress + ", email=" + email
+				+ "]";
 	}
 	
 	
